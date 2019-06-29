@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" class="body-full-height">
+    <head>        
+        <!-- META SECTION -->
+        <title>Havelsan Etkinlik Sayfası</title>            
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <!-- END META SECTION -->
+        
+        <!-- CSS INCLUDE -->        
+        <link rel="stylesheet" type="text/css" id="theme" href="css/theme-default.css"/>
+        <!-- EOF CSS INCLUDE -->    
+
+        <style>
+        	* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+ 
+
+
+        </style>                                 
+    </head>
+
+    <body>
+   
+        <div class="login-container lightmode">
+        	     <!-- Body Backgroud Video -->
+		
+    		<video autoplay muted loop class="login-container lightmode">
+  <source src="havel1.mp4" type="video/mp4">
+  Browser Html5 Video Çalıştırmıyor.
+</video>
+		
+		<!-- Body Backgroud Video End -->
+        
+            <div class="login-box animated fadeInDown">
+			  <h1 style="color:white">Havelsan Event Paneli "${new Date()}"</h1>
+                
+
+
+
+                <div class="login-body">
+                    <div class="login-title"><strong>Hoşgeldiniz</strong> </div>
+                    <form action="index.html" class="form-horizontal" method="post">
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" placeholder="E-mail"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <input type="password" class="form-control" placeholder="Şifre"/>
+                        </div>
+
+
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-6">
+                            <button class="btn btn-info btn-block">Giriş</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                    </form>
+                </div>
+                <div class="login-footer">
+                    <div class="pull-left">
+                        HAVELSAN A.Ş. Copyright &copy; 2019   
+                    </div>
+                 </div>
+            </div>
+            
+        </div>
+        <script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+        
+    </body>
+</html>
+
+
+
+
+
+
